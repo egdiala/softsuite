@@ -1,10 +1,11 @@
 import type { ReactNode } from "react";
+import { Header } from "components"
 
 const MainLayout = ({ children }: { children: ReactNode }) => {
 
   return (
-    <section className="flex h-full">
-      {/* <Sidebar /> */}
+    <section className="flex flex-col h-full">
+      <Header />
       <main className="flex-1 h-full overflow-hidden relative">
         {/* <Header /> */}
 

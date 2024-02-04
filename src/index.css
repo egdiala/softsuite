@@ -1,3 +1,9 @@
+@import url("https://fonts.cdnfonts.com/css/gilroy-bold");
+@import url("https://fonts.cdnfonts.com/css/gilroy-light");
+@import url("https://fonts.cdnfonts.com/css/gilroy-regular");
+@import url("https://fonts.cdnfonts.com/css/gilroy-medium");
+@import url("https://fonts.cdnfonts.com/css/gilroy-heavy");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

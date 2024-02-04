@@ -1,6 +1,10 @@
+import { Button } from "components/index"
+
 const ElementsPage = () => {
     return (
-        <div>Elements</div>
+        <div className="bg-error-200">
+            <Button theme='primary'>Hi</Button>
+        </div>
     )
 }
 
