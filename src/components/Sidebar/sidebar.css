@@ -1,0 +1,3 @@
+.softSidebar {
+  @apply fixed flex flex-col h-screen overflow-y-hidden w-72 px-4 pt-4 pb-16 inset-y-0 items-start z-20 left-0 bottom-0 top-0 transform lg:relative lg:translate-x-0 -translate-x-full transition-all duration-200 ease-in-out break-all;
+}
