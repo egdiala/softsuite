@@ -10,7 +10,7 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
           <div>hello</div>
         </Sidebar>
 
-        <div className='flex-1 pt-2 pb-10 px-5 lg:px-12 overflow-auto flex flex-col h-full min-h-full mx-auto scrollbar-hide bg-primary/10'>
+        <div className='flex-1 pt-2 pb-10 px-5 lg:px-12 overflow-auto flex flex-col h-full min-h-full mx-auto scrollbar-hide bg-[#F6F7F9]'>
           {children}
         </div>
       </main>
