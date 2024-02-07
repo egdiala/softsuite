@@ -1,10 +1,16 @@
 .softButton {
   @apply whitespace-nowrap font-bold flex px-4 gap-2 items-center justify-center w-fit h-fit disabled:cursor-not-allowed focus:outline-none;
 }
-.softButtonPrimary {
+.softButton-primary-filled {
   @apply bg-primary hover:bg-primary disabled:bg-primary/[14%] text-white disabled:text-white !important;
 }
-.softButtonSecondary {
+.softButton-primary-outline {
+  @apply border-[0.5px] border-primary text-primary !important;
+}
+.softButton-secondary-filled {
+  @apply bg-secondary text-white !important;
+}
+.softButton-secondary-outline {
   @apply border-[0.5px] border-secondary text-secondary !important;
 }
 .softButtonTertiary {
@@ -14,7 +20,7 @@
   @apply w-full;
 }
 .softButton40 {
-  @apply rounded text-sm py-2.5;
+  @apply rounded text-sm p-2.5;
 }
 .softButton52 {
   @apply rounded-lg text-base py-3;

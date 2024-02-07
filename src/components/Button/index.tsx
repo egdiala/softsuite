@@ -1,11 +1,16 @@
 import React from "react";
-import './button.css'
+import "./button.css";
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  /**
+   * What theme color to render
+   */
+  theme: "primary" | "secondary" | "tertiary";
   /**
    * What variant to render
    */
-  theme: "primary" | "secondary" | "tertiary";
+  variant: "filled" | "outline";
   /**
    * How large should the button be?
    */
@@ -26,35 +31,31 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 
 const btn = {
   sizes: {
-    '40': 'softButton40',
-    '52': 'softButton52',
-    '56': 'softButton56',
+    "40": "softButton40",
+    "52": "softButton52",
+    "56": "softButton56",
   },
-  themes: {
-    'primary': 'softButtonPrimary',
-    'secondary': 'softButtonSecondary',
-    'tertiary': 'softButtonTertiary'
-  }
-}
+};
 
 /**
  * Primary UI component for user interaction
  */
 export const Button: React.FC<ButtonProps> = ({
   theme,
+  variant,
   size = "40",
   block,
   ...props
 }: ButtonProps) => {
-  const width = block ? 'softButtonBlock' : "";
+  const width = block ? "softButtonBlock" : "";
 
   return (
     <button
       type='button'
       className={[
-        'softButton',
+        "softButton",
         btn.sizes[size],
-        btn.themes[theme],
+        `softButton-${theme}-${variant}`,
         width,
       ]
         .join(" ")
